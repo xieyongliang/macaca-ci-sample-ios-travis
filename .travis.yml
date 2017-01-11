@@ -1,0 +1,10 @@
+os: osx
+osx_image: xcode8
+before_install:
+  - brew update
+  - brew install nvm
+  - source $(brew --prefix nvm)/nvm.sh
+  - nvm install 4.2.1
+  - brew install ios-webkit-debug-proxy
+script:
+  - make test
