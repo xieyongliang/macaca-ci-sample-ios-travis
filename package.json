@@ -1,0 +1,25 @@
+{
+  "name": "macaca-ci-sample-ios-travis",
+  "version": "0.1.0",
+  "description": "macaca travis ci sample",
+  "keywords": [
+    "macaca"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/macaca-sample/macaca-ci-sample-ios-travis.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+     "mobile-app-sample-nodejs": "*"
+  },
+  "scripts": {
+    "test": "make test",
+    "jshint": "make jshint"
+  },
+  "pre-commit": [
+    "jshint"
+  ],
+  "homepage": "https://github.com/macaca-sample/macaca-ci-sample-ios-travis",
+  "license": "MIT"
+}
